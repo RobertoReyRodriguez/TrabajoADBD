@@ -7,19 +7,14 @@ public class Generadorbd {
 
     public static void generarDatos(Connection conexion) {
         try {
-            // Insertar servidores
             insertarServidores(conexion);
 
-            // Insertar usuarios
             insertarUsuarios(conexion);
 
-            // Insertar personajes
             insertarPersonajes(conexion);
 
-            // Insertar mapas
             insertarMapas(conexion);
 
-            // Insertar zonas
             insertarZonas(conexion);
 
             System.out.println("Datos generados e insertados correctamente.");
